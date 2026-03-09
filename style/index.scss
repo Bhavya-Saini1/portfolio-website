@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FED9B7;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+// ScrollBar
+
+::-webkit-scrollbar {
+    width: 5px;          
+ }
+  
+::-webkit-scrollbar-thumb {   
+   background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ffffff));
+}
+::-webkit-scrollbar-track {     
+   background-color: none;
+ }
+
+// Background
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    .showcaseImage{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("pexels-tirachard-kumtanom-733853.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(2px);
+        }
+}
+
+// Color Shade over the background
+
+.colorShade{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: -0;
+    .showcaseShade{
+        width: 100vw;
+        height: 100vh;
+        background-color: #0081A7;
+        opacity: 30%;
+    }
+}
+
+// Graphic Layer
+
+.graphicMidground{
+    height:100vh;
+    width: 100vw;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100vh;
+    .profileImage{
+        height: 700px;
+        margin-top: 90px;
+        background-image: url("—Pngtree—beautiful abstract line background curved_4403098.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        rotate: 60deg;
+        background-attachment: fixed;
+    }
+}
+
+// Text Layer
+.infoMidground{
+    height:100vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    margin-top: -100vh;
+    .Name{
+        width: 550px;
+        font-family: "PT Serif";
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 150px;
+        position: absolute;
+        left: 20vw;
+        top: 150px;
+        line-height: 107px;
+        color:#775B59;
+    }
+    .Profession{
+        width: 550px;
+        font-family: "PT Serif";
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 30px;
+        position: absolute;
+        left: 20vw;
+        top: 455px;
+        color:#87B6A7;
+    }
+    .profileImage{
+        width: 400px;
+        height: 400px;
+        background-image: url("pexels-rachel-claire-5490276.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: 0px -35px;
+        left: 65vw;
+        top: 280px;
+    }
+    .profileCaption{
+        width: 400px;
+        font-family: "Lato";
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 15px;
+        position: absolute;
+        left: 65vw;
+        top: 680px;
+        text-align: center;
+        line-height: 25px;
+    }
+    .decorativeImage{
+        width: 700px;
+        height: 150px;
+        background-image: url("pexels-francesco-ungaro-1671324.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 9.1vw;
+        top: 600px;
+        background-attachment: fixed;
+    }
+    .Projects{
+        position: absolute;
+        top: 100vh;
+        height: 100vh;
+        width: 100vw;
+        background-color: #87B6A7;
+        h1{
+            width: 250px;
+            font-family: "PT Serif";
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 50px;
+            position: absolute;
+            left: 7vw;
+            top: 3vw;
+            line-height: 36px;
+            color:#32161F;
+        }
+        .Project1{
+            height: 700px;
+            width: 600px;
+            position: absolute;
+            left: 10vw;
+            top: 200px;
+            background-color: #18435A;
+            .projectImage{
+                height: 670px;
+                width: 325px;
+                background-image: url("pexels-tom-li-3567218.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+            h1{
+                position: absolute;
+                top: 15px;
+                left: 350px;
+                color: #87B6A7;
+            }
+            p{
+                color: #87B6A7;
+                width: 225px;
+                font-family: "Lato";
+                font-weight: 400;
+                letter-spacing: 2px;
+                font-size: 15px;
+                position: absolute;
+                left: 350px;
+                top: 175px;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+        .Project2{
+            height: 345px;
+            width: 600px;
+            position: absolute;
+            left: 50.5vw;
+            top: 200px;
+            background-color: #18435A;
+            .projectImage{
+                height: 315px;
+                width: 270px;
+                background-image: url("pexels-pixabay-236937.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+            h1{
+                position: absolute;
+                top: 15px;
+                left: 315px;
+                color: #87B6A7;
+            }
+            p{
+                color: #87B6A7;
+                width: 255px;
+                font-family: "Lato";
+                font-weight: 400;
+                letter-spacing: 2px;
+                font-size: 15px;
+                position: absolute;
+                left: 315px;
+                top: 175px;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+        .Project3{
+            height: 345px;
+            width: 600px;
+            position: absolute;
+            left: 50.5vw;
+            top: 560px;
+            background-color: #18435A;
+            .projectImage{
+                height: 310px;
+                width: 270px;
+                background-image: url("pexels-andy-vu-3484061.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                background-attachment: fixed;
+            }
+            h1{
+                position: absolute;
+                top: 15px;
+                left: 315px;
+                color: #87B6A7;
+            }
+            p{
+                color: #87B6A7;
+                width: 255px;
+                font-family: "Lato";
+                font-weight: 400;
+                letter-spacing: 2px;
+                font-size: 15px;
+                position: absolute;
+                left: 315px;
+                top: 175px;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+    }
+    .Feed{
+        position: absolute;
+        top: 200vh;
+        height: 100vh;
+        width: 100vw;
+        background-color: #87B6A7;
+        h1{
+            width: 250px;
+            font-family: "PT Serif";
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 50px;
+            position: absolute;
+            left: 7vw;
+            top: 3vw;
+            line-height: 36px;
+            a{
+                text-decoration: none;
+                font-family: "PT Serif";
+                font-weight: 700;
+                letter-spacing: 2px;
+                font-size: 50px;
+                line-height: 36px;
+                color: black;
+                color:#32161F;
+            }
+        }
+        .Image1{
+            height: 500px;
+            width: 500px;
+            background-image: url("pexels-andrei-tanase-2221705.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 275px;
+            left: 7.5vw;
+        }
+        .Image2{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-alexander-zvir-3135371.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 275px;
+            left: 41.5vw;
+        }
+        .Image3{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-farid-bettioui-85013.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 535px;
+            left: 41.5vw;
+        }
+        .Image4{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-jan-kroon-1023396.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 275px;
+            left: 59vw;
+        }
+        .Image5{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-little-visuals-1732.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 535px;
+            left: 59vw;
+        }
+        .Image6{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-wendelin-jacober-1460174.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 535px;
+            left: 76.5vw;
+        }
+        .Image7{
+            height: 250px;
+            width: 250px;
+            background-image: url("pexels-zhanqun-cai-3998490.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 275px;
+            left: 76.5vw;
+        }
+    }
+    .Resume{
+        position: absolute;
+        top: 300vh;
+        height: 100vh;
+        width: 100vw;
+        h1{
+            width: 250px;
+            font-family: "PT Serif";
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 50px;
+            position: absolute;
+            left: 7vw;
+            top: 3vw;
+            line-height: 36px;
+            color:#32161F;
+        }
+        .resumeImage{
+            height: 600px;
+            width: 400px;
+            background-image: url("pexels-cottonbro-8090137.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 200px;
+            left: 10vw;
+        }
+        .aboutMe{
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            top: 250px;
+            left: 38vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                text-align: center;
+                margin-left: -3vw;
+                margin-bottom: 0px;
+                font-size: 40px;
+            }
+            p{ 
+                margin-top: -135px; 
+            }
+        }
+        .Skill1{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 240px;
+            left: 65.5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                text-align: center;
+                margin-left: -3vw;
+                margin-bottom: 0px;
+                margin-top: -5px;
+                font-size: 30px;
+            }
+            p{
+                margin-top: 25px;
+                margin-bottom: -10px;
+            }
+        }
+        .Skill2{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 415px;
+            left: 65.5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                text-align: center;
+                margin-left: -3vw;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+            p{
+                margin-bottom: -10px; 
+            }
+        }
+    }
+    .Contact{
+        position: absolute;
+        top: 400vh;
+        height: 60vh;
+        width: 100vw;
+        h1{
+            width: 250px;
+            font-family: "PT Serif";
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 50px;
+            position: absolute;
+            left: 7vw;
+            top: 3vw;
+            line-height: 36px;
+            color:#32161F;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            position: absolute;
+            top: 100px;
+            left: 20vw;
+            .line{
+                height:200px;
+                width:3px;
+                background-color: #32161F;
+                margin-left: 8em;
+                margin-right: 4em;
+            }
+            
+            .left{
+                padding: 1em;
+                border-radius: 20px;
+                width: 250px;
+            }
+            
+            .footer{
+                padding: 1em;
+                border-radius: 20px;
+                color: black;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;
+                form button{
+                    border-radius: 20px;
+                    background-color:  #18435A;
+                    color: #ffffff;
+                    border: 0;
+                    padding: 12px 40px;
+                    font-weight: bold;
+                    text-align: center;
+                    color:#87B6A7;
+                }
+                form input{
+                    width: 200px;
+                    display: block;
+                    box-sizing: border-box;
+                    background-color:  white;
+                    border-radius: 10px;
+                
+                    font-size: 14px;
+                    font-weight: normal;
+                    border:none;
+                    color:  black;
+                
+                    width: 400px;
+                    padding: 10px;
+                    color:#32161F;
+                }
+            }
+            
+            .container2{
+                display: flex;
+                justify-content: center;
+            }
+            
+            .logo-text{
+                color: white;
+                color:#32161F;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            .container{
+                flex-direction: column;
+            }
+        
+            .line{
+                height: 5vh;
+                width: 0px;
+                background-color: rgba(0,0,0,0);
+            }
+        }
+    }
+}
+
+
+
+// Fixed Elements Layer
+.foreground{
+    height:100vh;
+    width: 100vw;
+    z-index: 2;
+    position: fixed; 
+    margin-top: -100vh;
+    nav{
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        h1{
+            justify-self: flex-start;
+            margin-right: 35vw;
+            text-transform: uppercase;
+            font-family: 'Space Grotesk';
+            letter-spacing: 5px;
+            color:#32161F;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin-right: 5vw;
+            margin-bottom: -35px;
+            li{
+                padding: 0px 65px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-family: 'Space Grotesk';
+                    font-weight: 300;
+                    color:#32161F;
+                }
+            }
+        }
+    }
+}
